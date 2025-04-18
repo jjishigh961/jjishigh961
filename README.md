@@ -443,4 +443,18 @@
     "timestamp": "2025-04-11T00:17:10Z",
     "events": []
   }
+}```java
+public class CurrencyConverter {
+
+    public static double convertAtomToUSD(double atomAmount) {
+        // Assuming 1 atom = 0.05 USD
+        double usdRate = 0.05;
+        return atomAmount * usdRate;
+    }
+
+    public static void main(String[] args) {
+        double atomAmount = 324624; // Amount in uatom
+        double usdAmount = convertAtomToUSD(atomAmount);
+        System.out.println("Equivalent USD amount: $" + usdAmount);
+    }
 }
